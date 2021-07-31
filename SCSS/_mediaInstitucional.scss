@@ -1,0 +1,151 @@
+$title-font-size: 3.2rem;
+$parrafo-font-size: 1.4rem;
+$background-school: #dad6d6;
+$body-color: #f8f9fa;
+$shadows: 0px 0px 2px rgb(16, 10, 108);
+$colorSegundo: rgb(16, 10, 108);
+$text-color: rgba(0, 0, 0, 0.5);
+$text-color-complement: #f8f9fa;
+
+@media only screen and (max-width: 900px) and (min-width: 701px) {
+  .seccionPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: stretch;
+    height: 65%;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 0.6%;
+    .seccionPrincipal__carrousel {
+      border-top: solid 1rem lightcyan;
+      .logoClientes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .logoClientes__logo {
+          width: 15vw;
+          padding: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  .seccionPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: stretch;
+    height: 65%;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 0.6%;
+    .seccionPrincipal__carrousel {
+      border-top: solid 1rem lightcyan;
+      .logoClientes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .logoClientes__logo {
+          width: 25vw;
+          padding: 3%;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 401px) {
+  .seccionPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: stretch;
+    height: 65%;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 0.6%;
+    .seccionPrincipal__articuloHistoria {
+      justify-content: stretch;
+      background-color: $body-color;
+      border-top-style: solid;
+      border-top-width: 1rem;
+      border-top-color: lightcyan;
+      .seccionPrincipal__articuloHistoria--title {
+        width: 50vw;
+        color: $text-color;
+        font-size: $title-font-size - 1rem;
+        word-spacing: 5px;
+        letter-spacing: 6.5px;
+        text-align: left;
+        margin-left: 2rem;
+        font-weight: bold;
+        padding: 2rem;
+        border-top: solid 3px $colorSegundo;
+        text-shadow: $shadows;
+      }
+      .seccionPrincipal__articuloHistoria--paragraph {
+        align-items: center;
+        font-size: $parrafo-font-size;
+        text-align: justify;
+        margin: -1rem 10% 2rem 10%;
+      }
+    }
+    .seccionPrincipal__carrousel {
+      border-top: solid 1rem lightcyan;
+      .logoClientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        .logoClientes__logo {
+          width: 25vw;
+          padding: 3%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .seccionPrincipal {
+    display: flex;
+    flex-direction: column;
+    
+    .seccionPrincipal__articuloHistoria {
+      justify-content: stretch;
+      background-color: $body-color;
+      border-top-style: solid;
+      border-top-width: 1rem;
+      border-top-color: lightcyan;
+      .seccionPrincipal__articuloHistoria--title {
+        width: 50vw;
+        color: black;
+        font-size: $parrafo-font-size;
+        word-spacing: 5px;
+        letter-spacing: 6.5px;
+        text-align: center;
+        margin-left: 3%;
+        font-weight: bold;
+        padding: 2rem;
+        border-top: solid 3px $colorSegundo;
+        text-shadow: $shadows;
+      }
+      .seccionPrincipal__articuloHistoria--paragraph {
+        align-items: center;
+        font-size: $parrafo-font-size - 0.5rem;
+        text-align: justify;
+        margin: -1rem 10% 2rem 10%;
+      }
+    }
+    .seccionPrincipal__carrousel {
+      display: none;
+    }
+  }
+}

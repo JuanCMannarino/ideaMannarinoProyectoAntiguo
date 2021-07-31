@@ -1,0 +1,76 @@
+$title-font-size: 3.2rem;
+$parrafo-font-size: 1.4rem;
+$background-school: #dad6d6;
+$body-color: #f8f9fa;
+$shadows: 0px 0px 2px rgb(16, 10, 108);
+$colorSegundo: rgb(16, 10, 108);
+$text-color: rgba(0, 0, 0, 0.5);
+$text-color-complement: #f8f9fa;
+
+@import "estilosHeader";
+@import "estilosFooter";
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: "Poppins", "Roboto", sans-serif;
+  section.showcase {
+    background-color: $colorSegundo;
+    .showcase-text {
+      padding: 5%;
+      .seccionPrincipal__articuloNosotros--title {
+        color: $text-color-complement;
+        font-size: $title-font-size;
+        letter-spacing: 6.5px;
+        font-weight: bold;
+        border-top: solid 3px lightcyan;
+        text-shadow: $shadows;
+      }
+      .seccionPrincipal__articuloNosotros--paragraph {
+        font-size: $parrafo-font-size;
+        text-align: left;
+        color: $text-color-complement;
+      }
+    }
+    .showcase-img {
+      margin-top: 1%;
+      margin-bottom: -8%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  section.testimonials {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
+    .container {
+      h2{text-shadow: $shadows;
+      }
+      .testimonial__block {
+        .testimonial__block--col {
+          .testimonial-item {
+            img {
+              width: 15rem;
+              height: 12rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 201px) {
+  body {
+    section.showcase {
+      background-color: $colorSegundo;
+      .showcase-img {
+        margin-bottom: 0%;
+        margin-top: 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
