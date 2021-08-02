@@ -7,18 +7,22 @@ $colorSegundo: rgb(16, 10, 108);
 $text-color: rgba(0, 0, 0, 0.5);
 $text-color-complement: #f8f9fa;
 
-@import "estilosHeader";
+@import "estilosHeaderCop";
 @import "estilosFooter";
-*{
+* {
   margin: 0;
   padding: 0;
 }
 body {
-    font-family: "Poppins", "Roboto", sans-serif;
+  width: 100vw;
+  font-family: "Poppins", "Roboto", sans-serif;
   section.showcase {
     background-color: $colorSegundo;
+    height: 480px;
     .showcase-text {
-      padding: 5%;
+      padding: 1%;
+      margin: 1%;
+      width: 49vw;
       .seccionPrincipal__articuloNosotros--title {
         color: $text-color-complement;
         font-size: $title-font-size;
@@ -34,10 +38,10 @@ body {
       }
     }
     .showcase-img {
-      margin-top: 1%;
-      margin-bottom: -8%;
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
+      width: 48vw;
+      height: 480px;
     }
   }
   section.testimonials {
@@ -45,7 +49,8 @@ body {
     padding-bottom: 3rem;
     background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
     .container {
-      h2{text-shadow: $shadows;
+      h2 {
+        text-shadow: $shadows;
       }
       .testimonial__block {
         .testimonial__block--col {
@@ -60,16 +65,52 @@ body {
     }
   }
 }
-
-@media only screen and (max-width: 1050px) and (min-width: 201px) {
+@media only screen and (max-width: 1050px) and (min-width: 351px) {
   body {
     section.showcase {
       background-color: $colorSegundo;
+      align-items: center;
+      height: auto;
+      .showcase-text {
+        padding: 2%;
+        width: 100vw;
+        height: auto
+      }
       .showcase-img {
-        margin-bottom: 0%;
-        margin-top: 0%;
+        margin-left: 0%;
         background-size: cover;
         background-repeat: no-repeat;
+        width: 100vw;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px){
+  body {
+    section.showcase {
+      background-color: $colorSegundo;
+      align-items: center;
+      height: auto;
+      .showcase-text {
+        padding: 2%;
+        width: 100vw;
+        height: auto;
+        .seccionPrincipal__articuloNosotros--title {
+          color: $text-color-complement;
+          font-size: $title-font-size - 1rem;
+          letter-spacing: 6.5px;
+          font-weight: bold;
+          border-top: solid 3px lightcyan;
+          text-shadow: $shadows;
+        }
+        .seccionPrincipal__articuloNosotros--paragraph {
+          font-size: $parrafo-font-size - 0.4rem;
+          text-align: left;
+          color: $text-color-complement;
+        }
+      }
+      .showcase-img {
+        display: none;
       }
     }
   }

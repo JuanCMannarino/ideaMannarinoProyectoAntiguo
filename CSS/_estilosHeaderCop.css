@@ -24,7 +24,6 @@
   .encabezado div.header__nav--listStyle {
     font-size: 1.2rem;
     letter-spacing: 1px;
-    margin-left: 3rem;
   }
   .encabezado div.header__nav--listStyle ul li.nav-item {
     color: #f8f9fa;
@@ -55,7 +54,37 @@
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 901px) {
+@media only screen and (max-width: 1199px) and (min-width: 1000px) {
+  .encabezado {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
+    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
+    position: relative;
+    z-index: 20;
+  }
+  .encabezado .header__logo {
+    width: 6%;
+    height: auto;
+    position: relative;
+    margin: 0% 0% 0% 1%;
+  }
+  .encabezado .header__nav--titleStyle {
+    letter-spacing: 3px;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .encabezado .header__nav--titleStyleB {
+    display: none;
+  }
+  .encabezado div.header__nav--listStyle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 901px) {
   .encabezado {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
     background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
@@ -71,7 +100,7 @@
   .encabezado .header__nav--titleStyle {
     letter-spacing: 3px;
     margin-left: 2rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
     font-weight: bold;
     font-size: 1.3rem;
   }
@@ -81,7 +110,7 @@
   .encabezado div.header__nav--listStyle {
     font-size: 1.1rem;
     letter-spacing: 1px;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .encabezado div.header__nav--listStyle ul li:hover {
     color: #f8f9fa;
@@ -196,219 +225,4 @@
     display: none;
   }
 }
-
-.footer {
-  margin-bottom: 0%;
-}
-
-.footer .footer__div {
-  border: none;
-  width: 100vw;
-  text-align: center;
-}
-
-.footer .footer__div .footer__div--span {
-  color: #dad6d6;
-}
-
-.footer .footer__nav--style {
-  border-bottom-style: ridge;
-  width: 100vw;
-  position: relative;
-  z-index: 20;
-  margin-left: 0%;
-}
-
-.footer .footer__nav--style h3 {
-  font-size: 2rem;
-  margin: 0%;
-  letter-spacing: 4px;
-  font-weight: bold;
-}
-
-.footer .footer__nav--style li.foot {
-  margin-left: 8%;
-}
-
-.footer .footer__nav--style li.location {
-  list-style-image: url(../assets/iconos/locacion.png);
-}
-
-.footer .footer__nav--style li.mail {
-  list-style-image: url(../assets/iconos/mail.png);
-}
-
-.footer .footer__nav--style li.phone {
-  list-style-image: url(../assets/iconos/whatsapp.png);
-}
-
-.footer .footer__nav--style li.foot--redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0% 2% 0% -1%;
-}
-
-.footer .footer__nav--style li.foot--redes a.imgRedes {
-  margin: 0%;
-}
-
-@media only screen and (max-width: 600px) and (min-width: 411px) {
-  .footer .footer__nav--style {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .footer .footer__nav--style h3 {
-    text-align: center;
-    margin-right: 5%;
-  }
-  .footer .footer__nav--style li.foot {
-    margin-left: 8%;
-    font-size: 1rem;
-    padding-top: 1%;
-  }
-  .footer .footer__nav--style li.foot--redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0% 2% 0% -1%;
-  }
-  .footer .footer__nav--style li.foot--redes a.imgRedes {
-    margin: 0%;
-  }
-  .footer .footer__div {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 410px) {
-  .footer .footer__nav--style {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .footer .footer__nav--style h3 {
-    text-align: center;
-    margin: 0%;
-  }
-  .footer .footer__nav--style li.foot {
-    margin-left: 20%;
-    font-size: 1rem;
-    padding-top: 5%;
-  }
-  .footer .footer__nav--style li.foot--redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0% 2% 0% -1%;
-  }
-  .footer .footer__nav--style li.foot--redes a.imgRedes {
-    margin: 0%;
-  }
-  .footer .footer__div {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 250px) {
-  .footer .footer__nav--style li.foot {
-    margin-left: 25%;
-    font-size: 0.6rem;
-    padding-top: 5%;
-  }
-  .footer .footer__nav--style li.foot--redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0% 2% 0% -1%;
-  }
-  .footer .footer__nav--style li.foot--redes a.imgRedes {
-    margin: 0%;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", "Roboto", sans-serif;
-}
-
-.seccionContacto div {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.seccionContacto div iframe.mapa {
-  display: block;
-  width: 100%;
-  border: none;
-}
-
-.seccionContacto .articuloContacto {
-  float: right;
-  display: block;
-  position: absolute;
-  top: 100px;
-  right: 30px;
-  z-index: 20;
-  padding: 2%;
-  border-radius: 2%;
-  background: linear-gradient(45deg, white, gray);
-}
-
-@media only screen and (max-width: 900px) and (min-width: 301px) {
-  .seccionContacto .articuloContacto {
-    float: none;
-    position: relative;
-    margin: -11% 0% 26% 15%;
-    padding-right: 4%;
-    background: #dad6d6;
-  }
-  .seccionContacto .articuloContacto .articuloContacto__textButton .articuloContacto__textButton--button {
-    margin: 2% 42% 8% 42%;
-    padding: 0%;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .seccionContacto .articuloContacto {
-    float: none;
-    position: relative;
-    margin: -20% -5% 50% 20%;
-    padding-right: 4%;
-    background: #dad6d6;
-  }
-  .seccionContacto .articuloContacto .articuloContacto__textButton .articuloContacto__textButton--button {
-    margin: 2% 42% 8% 42%;
-    padding: 0%;
-  }
-}
-/*# sourceMappingURL=estilosContacto.css.map */
+/*# sourceMappingURL=estilosHeaderCop.css.map */

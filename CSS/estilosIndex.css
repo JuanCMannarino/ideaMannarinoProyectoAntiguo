@@ -523,7 +523,7 @@
     margin: 0%;
   }
 }
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1200px) {
   .encabezado {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
     background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
@@ -537,18 +537,105 @@
     margin: 0% 0% 0% 2%;
   }
   .encabezado .header__nav--titleStyle {
-    letter-spacing: 3px;
-    margin-left: 2rem;
+    letter-spacing: 4px;
+    margin-left: 5rem;
     margin-right: 5rem;
     font-weight: bold;
+    font-size: 1.6rem;
   }
   .encabezado .header__nav--titleStyleB {
     display: none;
   }
   .encabezado div.header__nav--listStyle {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  .encabezado div.header__nav--listStyle ul li.nav-item {
+    color: #f8f9fa;
+    background-color: transparent;
+  }
+  .encabezado div.header__nav--listStyle ul li.nav-item a {
+    color: #5b5b5b;
+  }
+  .encabezado div.header__nav--listStyle ul li.nav-item:hover {
+    color: #f8f9fa;
+    background-color: #5b5b5b;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  .encabezado div.header__nav--listStyle ul li.nav-item:hover a:hover {
+    color: #f8f9fa;
+  }
+  .encabezado div.header__nav--listStyle ul ul.dropdown-menu li {
+    background-color: #f8f9fa;
+  }
+  .encabezado div.header__nav--listStyle ul ul.dropdown-menu li a.dropdown-item {
+    color: #5b5b5b;
+  }
+  .encabezado div.header__nav--listStyle ul ul.dropdown-menu li:hover a.dropdown-item {
+    color: #5b5b5b;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1000px) {
+  .encabezado {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
+    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
+    position: relative;
+    z-index: 20;
+  }
+  .encabezado .header__logo {
+    width: 6%;
+    height: auto;
+    position: relative;
+    margin: 0% 0% 0% 1%;
+  }
+  .encabezado .header__nav--titleStyle {
+    letter-spacing: 3px;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .encabezado .header__nav--titleStyleB {
+    display: none;
+  }
+  .encabezado div.header__nav--listStyle {
+    font-size: 1.1rem;
     letter-spacing: 1px;
     margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 901px) {
+  .encabezado {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
+    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
+    position: relative;
+    z-index: 20;
+  }
+  .encabezado .header__logo {
+    width: 6%;
+    height: auto;
+    position: relative;
+    margin: 0% 0% 0% 1%;
+  }
+  .encabezado .header__nav--titleStyle {
+    letter-spacing: 3px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .encabezado .header__nav--titleStyleB {
+    display: none;
+  }
+  .encabezado div.header__nav--listStyle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-left: 1rem;
   }
   .encabezado div.header__nav--listStyle ul li:hover {
     color: #f8f9fa;
