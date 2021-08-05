@@ -100,7 +100,7 @@ $text-color-complement: #f8f9fa;
           margin: 5% -1% 5% 2%;
           .seccionEscuela__col--span {
             margin: -5% 0% 0% 10%;
-            font-size: 25px;
+            font-size: 22px;
             text-align: start;
             width: 100%;
           }
@@ -118,6 +118,8 @@ $text-color-complement: #f8f9fa;
         font-size: x-large;
         margin-left: 46.5%;
         color: $colorSegundo;
+        transition: color, 1s;
+
       }
       a.botonReg:hover {
         border-radius: 8%;
@@ -127,6 +129,7 @@ $text-color-complement: #f8f9fa;
         margin-right: -50%;
         background-color: $colorSegundo;
         color: $text-color-complement;
+        transition: color, 1s;
       }
       div.banner {
         background-color: $colorSegundo;

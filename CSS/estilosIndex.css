@@ -20,15 +20,15 @@
     width: 100vw;
     margin-top: -3.5rem;
     padding-left: 4rem;
-    color: white;
+    color: #f8f9fa;
     font-size: 3.2rem;
     word-spacing: 10px;
     letter-spacing: 15px;
     text-align: left;
   }
   body .seccionPrincipal div.liga p.Ppal {
-    color: white;
-    font-size: 1.15rem;
+    color: #f8f9fa;
+    font-size: 1.2rem;
     word-spacing: 2px;
     letter-spacing: 1px;
     text-align: justify;
@@ -43,7 +43,8 @@
     word-spacing: 10px;
     letter-spacing: 7px;
     text-align: center;
-    text-shadow: 0px 0px 4px #100a6c;
+    text-shadow: 0px 0px 2px #100a6c;
+    color: rgba(0, 0, 0, 0.5);
   }
   body .seccionPrincipal .articulo__escuela div.escuela--texto p.Ppal {
     padding: 5%;
@@ -52,6 +53,7 @@
     word-spacing: 5px;
     letter-spacing: 2px;
     text-align: justify;
+    color: rgba(0, 0, 0, 0.5);
   }
   body div.seccionEscuela {
     margin-bottom: 5px;
@@ -65,6 +67,9 @@
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-align: baseline !important;
+        -ms-flex-align: baseline !important;
+            align-items: baseline !important;
   }
   body div.seccionEscuela div.seccionEscuela__sub div.seccionEscuela__col {
     display: -webkit-box;
@@ -91,7 +96,12 @@
     padding: 2px 12px 2px 12px;
     font-size: 1rem;
     margin-left: 41.5%;
+    margin-top: 5%;
     color: #100a6c;
+    display: inline-block;
+    margin-bottom: 3%;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela a.botonReg:hover {
     border-radius: 8%;
@@ -100,7 +110,9 @@
     font-size: 1.1rem;
     margin-left: 41.5%;
     background-color: #100a6c;
-    color: white;
+    color: #dad6d6;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela div.banner {
     background-color: #100a6c;
@@ -132,7 +144,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 9px;
-    text-shadow: 0px 0px 4px #100a6c;
+    text-shadow: 0px 0px 2px #100a6c;
   }
   body .seccionClientes .articuloClientes .articuloClientes__divisor {
     display: -webkit-box;
@@ -163,18 +175,18 @@
     width: 100%;
     height: auto;
   }
-  body .seccionPrincipal div.liga h2 {
+  body .seccionPrincipal div.liga h1.seccionPrincipal__liga--titulo {
     width: 100vw;
     margin-top: -3.5rem;
     padding-left: 4rem;
-    color: white;
+    color: #f8f9fa;
     font-size: 3.2rem;
     word-spacing: 10px;
     letter-spacing: 15px;
     text-align: left;
   }
   body .seccionPrincipal div.liga p.Ppal {
-    color: #1f1f29;
+    color: rgba(0, 0, 0, 0.5);
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: #100a6c;
@@ -189,7 +201,7 @@
     word-spacing: 10px;
     letter-spacing: 7px;
     text-align: center;
-    text-shadow: 0px 0px 4px #100a6c;
+    text-shadow: 0px 0px 2px #100a6c;
   }
   body .seccionPrincipal article.articulo__escuela div.escuela--texto p.Ppal {
     padding: 2%;
@@ -232,6 +244,8 @@
     font-size: 1rem;
     margin-left: 41.5%;
     color: #100a6c;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela a.botonReg:hover {
     border-radius: 8%;
@@ -240,7 +254,9 @@
     font-size: 1.1rem;
     margin-left: 41.5%;
     background-color: #100a6c;
-    color: white;
+    color: #dad6d6;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela div.banner {
     background-color: #100a6c;
@@ -267,18 +283,18 @@
   body .seccionPrincipal img.imgCorta {
     margin-top: 0%;
   }
-  body .seccionPrincipal div.liga h2 {
+  body .seccionPrincipal div.liga h1.seccionPrincipal__liga--titulo {
     width: 100vw;
     margin-top: -3rem;
     padding-left: 2%;
-    color: white;
+    color: #f8f9fa;
     font-size: 1.6rem;
     word-spacing: 5px;
     letter-spacing: 10px;
     text-align: center;
   }
   body .seccionPrincipal div.liga p.Ppal {
-    color: #1f1f29;
+    color: rgba(0, 0, 0, 0.5);
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: #100a6c;
@@ -293,11 +309,11 @@
     margin-left: 2%;
   }
   body .seccionPrincipal article.articulo__escuela div.escuela--texto h2.titulos {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     word-spacing: 10px;
     letter-spacing: 7px;
     text-align: left;
-    text-shadow: 0px 0px 4px #100a6c;
+    text-shadow: 0px 0px 2px #100a6c;
   }
   body .seccionPrincipal article.articulo__escuela div.escuela--texto p.Ppal {
     padding-left: 2%;
@@ -339,6 +355,8 @@
     font-size: 1rem;
     margin-left: 41.5%;
     color: #100a6c;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela a.botonReg:hover {
     border-radius: 8%;
@@ -347,7 +365,9 @@
     font-size: 1.1rem;
     margin-left: 41.5%;
     background-color: #100a6c;
-    color: white;
+    color: #dad6d6;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body div.seccionEscuela div.banner {
     background-color: #100a6c;
@@ -842,7 +862,7 @@
   }
   body .seccionEscuela .seccionEscuela__sub .seccionEscuela__col .seccionEscuela__col--span {
     margin: -5% 0% 0% 10%;
-    font-size: 25px;
+    font-size: 22px;
     text-align: start;
     width: 100%;
   }
@@ -858,6 +878,8 @@
     font-size: x-large;
     margin-left: 46.5%;
     color: #100a6c;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body .seccionEscuela a.botonReg:hover {
     border-radius: 8%;
@@ -867,6 +889,8 @@
     margin-right: -50%;
     background-color: #100a6c;
     color: #f8f9fa;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
   }
   body .seccionEscuela div.banner {
     background-color: #100a6c;
