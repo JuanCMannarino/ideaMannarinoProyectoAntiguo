@@ -17,11 +17,40 @@ body {
     width: 100vw;
   }
   .seccionPrincipal div {
-    width: 96vw;
+    width: 100vw;
     height: auto;
   }
+  .seccionPrincipal .articuloEscuela {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    background-color: #f8f9fa;
+    border-top-style: solid;
+    border-top-width: 1rem;
+    border-top-color: lightcyan;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, transparent), to(#dad6d6));
+    background-image: linear-gradient(to top, transparent 45%, #dad6d6);
+  }
   .seccionPrincipal .articuloEscuela h1 {
+    width: 50vw;
+    color: black;
+    font-size: 2.1rem;
+    word-spacing: 5px;
+    letter-spacing: 6.5px;
+    text-align: left;
+    margin-left: 2rem;
+    font-weight: bold;
+    padding: 2rem;
     border-top: solid 3px #100a6c;
+    text-shadow: 0px 0px 2px #100a6c;
+  }
+  .seccionPrincipal .articuloEscuela p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.25rem;
+    text-align: left;
+    margin: -1rem 10% 2rem 10%;
   }
   .seccionPrincipal .articuloCapacitacion {
     display: -webkit-box;
@@ -76,7 +105,7 @@ body {
     width: 100vw;
   }
   .seccionPrincipal div {
-    width: 96vw;
+    width: 100vw;
     height: auto;
   }
   .seccionPrincipal .articuloEscuela {

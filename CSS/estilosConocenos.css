@@ -86,8 +86,6 @@
 
 @media only screen and (max-width: 999px) and (min-width: 901px) {
   .encabezado {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(68%, transparent), to(rgba(0, 0, 0, 0.4)));
-    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
     position: relative;
     z-index: 20;
   }
@@ -101,8 +99,8 @@
     letter-spacing: 3px;
     margin-left: 2rem;
     margin-right: 2rem;
-    font-weight: bold;
-    font-size: 1.3rem;
+    font-weight: 630;
+    font-size: 2rem;
   }
   .encabezado .header__nav--titleStyleB {
     display: none;
@@ -111,12 +109,28 @@
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin-left: 1rem;
+    margin-top: 1%;
+    border-top: solid 0.5px #dad6d6;
+  }
+  .encabezado div.header__nav--listStyle ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .encabezado div.header__nav--listStyle ul li:hover {
     color: #f8f9fa;
     background-color: #5b5b5b;
     -webkit-transition: color, 1s;
     transition: color, 1s;
+    width: 10%;
+    border-radius: 6%;
+    text-align: center;
   }
 }
 
@@ -145,6 +159,33 @@
   }
   .encabezado div.container-fluid a.header__nav--titleStyleB {
     display: none;
+  }
+  .encabezado div.container-fluid div.header__nav--listStyle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+    margin-top: 1%;
+    border-top: solid 0.5px #dad6d6;
+  }
+  .encabezado div.container-fluid div.header__nav--listStyle ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .encabezado div.container-fluid div.header__nav--listStyle ul li:hover {
+    color: #f8f9fa;
+    background-color: #5b5b5b;
+    -webkit-transition: color, 1s;
+    transition: color, 1s;
+    width: 10%;
+    border-radius: 6%;
+    text-align: center;
   }
 }
 

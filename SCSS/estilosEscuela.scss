@@ -15,7 +15,6 @@ $text-color-complement: #f8f9fa;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", "Roboto", sans-serif;
 }
@@ -23,7 +22,7 @@ body {
   .seccionPrincipal {
     .imgPpal {
       justify-content: stretch;
-      margin-top: -6.5rem;
+      margin-top: 0rem;
       width: 100vw;
     }
     .articuloEscuela {
@@ -37,7 +36,6 @@ body {
         transparent 45%,
         $background-school
       );
-
       h1 {
         width: 50vw;
         color: black;

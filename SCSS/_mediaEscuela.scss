@@ -21,12 +21,38 @@ body{
       width: 100vw;
     }
     div {
-      width: 96vw;
+      width: 100vw;
       height: auto;
     }
     .articuloEscuela {
+      justify-content: stretch;
+      background-color: $body-color;
+      border-top-style: solid;
+      border-top-width: 1rem;
+      border-top-color: lightcyan;
+      background-image: linear-gradient(
+        to top,
+        transparent 45%,
+        $background-school
+      );
       h1 {
+        width: 50vw;
+        color: black;
+        font-size: 2.1rem;
+        word-spacing: 5px;
+        letter-spacing: 6.5px;
+        text-align: left;
+        margin-left: 2rem;
+        font-weight: bold;
+        padding: 2rem;
         border-top: solid 3px $colorSegundo;
+        text-shadow: $shadows;
+      }
+      p {
+        align-items: center;
+        font-size: $parrafo-font-size - 0.15rem;
+        text-align: left;
+        margin: -1rem 10% 2rem 10%;
       }
     }
     .articuloCapacitacion {
@@ -69,7 +95,7 @@ body{
       width: 100vw;
     }
     div {
-      width: 96vw;
+      width: 100vw;
       height: auto;
     }
     .articuloEscuela {

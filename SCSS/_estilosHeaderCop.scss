@@ -43,7 +43,6 @@ $title-header: 1.7rem;
           a:hover {
             color: #f8f9fa;
           }
-
         }
         ul.dropdown-menu {
           li {
@@ -52,9 +51,9 @@ $title-header: 1.7rem;
               color: #5b5b5b;
             }
           }
-          li:hover{
+          li:hover {
             a.dropdown-item {
-              color: #5b5b5b
+              color: #5b5b5b;
             }
           }
         }
@@ -102,7 +101,7 @@ $title-header: 1.7rem;
 
 @media only screen and (max-width: 999px) and (min-width: 901px) {
   .encabezado {
-    background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
+    // background-image: linear-gradient(transparent 68%, rgba(0, 0, 0, 0.4));
     position: relative;
     z-index: 20;
 
@@ -116,8 +115,8 @@ $title-header: 1.7rem;
       letter-spacing: 3px;
       margin-left: 2rem;
       margin-right: 2rem;
-      font-weight: bold;
-      font-size: 1.3rem;
+      font-weight: 630;
+      font-size: 2rem;
     }
     .header__nav--titleStyleB {
       display: none;
@@ -126,12 +125,21 @@ $title-header: 1.7rem;
       font-size: 1.1rem;
       letter-spacing: 1px;
       margin-left: 1rem;
-
+      margin-top: 1%;
+      border-top: solid 0.5px #dad6d6;
       ul {
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: space-around;
         li:hover {
           color: #f8f9fa;
           background-color: #5b5b5b;
           transition: color, 1s;
+          width: 10%;
+          border-radius: 6%;
+          text-align: center;
         }
       }
     }
@@ -158,10 +166,28 @@ $title-header: 1.7rem;
       a.header__nav--titleStyleB {
         display: none;
       }
-      // div.header__nav--listStyle {
-      //   align-self: flex-start;
-      //   margin-left: 5%;
-      // }
+      div.header__nav--listStyle {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        margin-left: 1rem;
+        margin-top: 1%;
+        border-top: solid 0.5px #dad6d6;
+        ul {
+          flex-direction: row;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+          justify-content: space-around;
+          li:hover {
+            color: #f8f9fa;
+            background-color: #5b5b5b;
+            transition: color, 1s;
+            width: 10%;
+            border-radius: 6%;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }
